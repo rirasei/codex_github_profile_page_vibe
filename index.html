@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="개발자 김개발의 포트폴리오 웹사이트입니다. 프로젝트, 기술 스택, 연락처를 확인할 수 있습니다.">
+  <meta name="theme-color" content="#f7f4ee">
+  <meta property="og:title" content="김개발 | 개발자 포트폴리오">
+  <meta property="og:description" content="문제를 구조화하고 제품으로 완성하는 개발자 김개발의 포트폴리오입니다.">
+  <meta property="og:type" content="website">
+  <title>김개발 | 개발자 포트폴리오</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">본문으로 바로가기</a>
+
+  <header class="site-header" data-header>
+    <nav class="nav" aria-label="주요 메뉴">
+      <a class="brand" href="#hero" aria-label="홈으로 이동">
+        <span class="brand-mark" aria-hidden="true">K</span>
+        <span>김개발</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="메뉴 열기">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#about">소개</a></li>
+        <li><a href="#skills">기술</a></li>
+        <li><a href="#projects">프로젝트</a></li>
+        <li><a href="#contact">연락처</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero section" id="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">Frontend Developer · Product-minded Engineer</p>
+        <h1 id="hero-title">사용자의 흐름을 읽고, 제품의 완성도를 높이는 개발자 김개발입니다.</h1>
+        <p class="hero-description">
+          복잡한 요구사항을 단순한 인터페이스와 유지보수 가능한 코드로 풀어냅니다.
+          지금은 웹 프론트엔드와 사용자 경험 중심의 제품 개발에 집중하고 있습니다.
+        </p>
+        <div class="hero-actions" aria-label="주요 링크">
+          <a class="button primary" href="#projects">프로젝트 보기</a>
+          <a class="button secondary" href="https://github.com/your-username" target="_blank" rel="noreferrer">GitHub</a>
+        </div>
+      </div>
+
+      <div class="workspace-visual" aria-label="개발자 워크스페이스 미리보기">
+        <div class="window">
+          <div class="window-bar">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="code-panel" aria-hidden="true">
+            <p><span class="muted">const</span> developer = {</p>
+            <p class="indent">name: <span class="string">'Kim Dev'</span>,</p>
+            <p class="indent">focus: <span class="string">'UX + Web'</span>,</p>
+            <p class="indent">ships: <span class="number">true</span>,</p>
+            <p>};</p>
+          </div>
+        </div>
+        <div class="status-card">
+          <span class="status-dot"></span>
+          <div>
+            <strong>Available for collaboration</strong>
+            <p>새로운 제품과 팀을 만날 준비가 되어 있습니다.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about" id="about" aria-labelledby="about-title">
+      <div class="section-heading">
+        <p class="eyebrow">About</p>
+        <h2 id="about-title">사용자가 망설이지 않는 화면을 만듭니다.</h2>
+      </div>
+      <div class="about-grid">
+        <p>
+          김개발은 웹 서비스의 문제를 빠르게 이해하고, 팀이 오래 다룰 수 있는 구조로 구현하는 개발자입니다.
+          기획 의도와 사용자 행동을 함께 보며 작은 인터랙션부터 페이지 전체 흐름까지 꼼꼼히 다듬습니다.
+        </p>
+        <div class="highlights" aria-label="주요 강점">
+          <div>
+            <strong>3+</strong>
+            <span>Years Experience</span>
+          </div>
+          <div>
+            <strong>12</strong>
+            <span>Projects Shipped</span>
+          </div>
+          <div>
+            <strong>4</strong>
+            <span>Core Stacks</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section skills" id="skills" aria-labelledby="skills-title">
+      <div class="section-heading">
+        <p class="eyebrow">Skills</p>
+        <h2 id="skills-title">제품을 끝까지 밀어내는 기술 스택</h2>
+      </div>
+      <div class="skill-grid">
+        <article class="skill-card">
+          <h3>Frontend</h3>
+          <p>HTML, CSS, JavaScript, TypeScript, React</p>
+        </article>
+        <article class="skill-card">
+          <h3>Product UI</h3>
+          <p>Responsive Design, Accessibility, Design System</p>
+        </article>
+        <article class="skill-card">
+          <h3>Engineering</h3>
+          <p>Git, REST API, Testing, Performance Tuning</p>
+        </article>
+        <article class="skill-card">
+          <h3>Collaboration</h3>
+          <p>Documentation, Code Review, Agile Workflow</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section projects" id="projects" aria-labelledby="projects-title">
+      <div class="section-heading">
+        <p class="eyebrow">Projects</p>
+        <h2 id="projects-title">최근에 집중한 프로젝트</h2>
+      </div>
+      <div class="project-grid">
+        <article class="project-card">
+          <div class="project-topline">
+            <span>Web App</span>
+            <a href="https://github.com/your-username/project-one" target="_blank" rel="noreferrer">GitHub</a>
+          </div>
+          <h3>팀 업무 대시보드</h3>
+          <p>작업 현황과 우선순위를 한 화면에서 파악할 수 있도록 정보 구조와 필터 경험을 개선한 대시보드입니다.</p>
+          <div class="tags" aria-label="사용 기술">
+            <span>React</span>
+            <span>TypeScript</span>
+            <span>CSS</span>
+          </div>
+        </article>
+        <article class="project-card featured">
+          <div class="project-topline">
+            <span>Portfolio</span>
+            <a href="https://github.com/your-username/project-two" target="_blank" rel="noreferrer">GitHub</a>
+          </div>
+          <h3>개인 포트폴리오 시스템</h3>
+          <p>프로젝트, 기술 스택, 소개 문구를 빠르게 업데이트할 수 있도록 정적 구조로 설계한 포트폴리오 사이트입니다.</p>
+          <div class="tags" aria-label="사용 기술">
+            <span>HTML</span>
+            <span>JavaScript</span>
+            <span>GitHub Pages</span>
+          </div>
+        </article>
+        <article class="project-card">
+          <div class="project-topline">
+            <span>Tooling</span>
+            <a href="https://github.com/your-username/project-three" target="_blank" rel="noreferrer">GitHub</a>
+          </div>
+          <h3>개발 생산성 도구</h3>
+          <p>반복 작업을 줄이고 팀의 코드 품질 체크를 자동화하기 위해 만든 작은 CLI 도구입니다.</p>
+          <div class="tags" aria-label="사용 기술">
+            <span>Node.js</span>
+            <span>CLI</span>
+            <span>Automation</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div class="contact-inner">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2 id="contact-title">함께 만들고 싶은 제품이 있다면 연락해 주세요.</h2>
+          <p>프로젝트 제안, 채용, 협업 이야기를 환영합니다. 아래 링크를 실제 연락처로 바꿔 사용하세요.</p>
+        </div>
+        <div class="contact-links" aria-label="연락처 링크">
+          <a href="mailto:hello@example.com">hello@example.com</a>
+          <a href="https://github.com/your-username" target="_blank" rel="noreferrer">github.com/your-username</a>
+          <a href="https://www.linkedin.com/in/your-username" target="_blank" rel="noreferrer">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span data-year></span> 김개발. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
