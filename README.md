@@ -1,49 +1,22 @@
-# GitHub Pages 개발자 포트폴리오
+# Developer Portfolio for GitHub Pages
 
-GitHub Pages Project Pages에 바로 배포할 수 있는 정적 개발자 포트폴리오 웹사이트입니다. 빌드 도구 없이 `index.html`, `styles.css`, `script.js`만으로 동작합니다.
+GitHub Pages에 바로 올릴 수 있는 정적 개발자 포트폴리오입니다. 빌드 도구 없이 `index.html`, `styles.css`, `script.js`만으로 동작합니다.
 
-## 로컬에서 확인하기
+## 수정할 곳
 
-Finder에서 `index.html`을 브라우저로 열거나, 터미널에서 아래 명령으로 간단한 로컬 서버를 실행합니다.
+- `index.html`: 이름, 소개 문구, 프로젝트, 이메일, GitHub/LinkedIn 링크를 바꿉니다.
+- `styles.css`: 색상과 레이아웃을 조정합니다.
+- `assets/hero-workspace.png`: 첫 화면 배경 이미지를 교체합니다.
+- `script.js`: 다크 모드, 모바일 메뉴, 프로젝트 필터 동작을 관리합니다.
 
-```bash
-python3 -m http.server 8000
-```
+## GitHub Pages 배포
 
-그 다음 브라우저에서 `http://localhost:8000`으로 접속합니다.
+1. 이 폴더의 파일을 GitHub 저장소에 커밋하고 `main` 브랜치로 푸시합니다.
+2. GitHub 저장소의 `Settings`에서 `Pages`로 이동합니다.
+3. `Build and deployment`에서 `Deploy from a branch`를 선택합니다.
+4. Branch는 `main`, 폴더는 `/root`를 선택하고 저장합니다.
+5. 사용자 페이지 저장소라면 `https://your-github-id.github.io/`, 프로젝트 페이지라면 `https://your-github-id.github.io/repository-name/`에서 확인합니다.
 
-## 내용 바꾸기
+## 로컬 확인
 
-- `index.html`에서 `김개발`, 소개 문구, 기술 스택, 프로젝트 설명, 이메일, GitHub, LinkedIn 링크를 실제 정보로 교체합니다.
-- `styles.css`의 `:root` 색상 변수로 전체 톤을 조정할 수 있습니다.
-- 프로젝트를 더 추가하려면 `project-card` 블록을 복사해 `Projects` 섹션 안에 붙여 넣습니다.
-
-## GitHub Pages 배포하기
-
-1. GitHub에서 새 저장소를 만듭니다.
-2. 이 폴더에서 Git 저장소를 초기화하고 파일을 커밋합니다.
-
-```bash
-git init
-git add .
-git commit -m "Create portfolio site"
-git branch -M main
-git remote add origin https://github.com/your-username/your-repository.git
-git push -u origin main
-```
-
-3. GitHub 저장소의 `Settings` > `Pages`로 이동합니다.
-4. `Build and deployment`의 `Source`를 `Deploy from a branch`로 선택합니다.
-5. `Branch`를 `main`, 폴더를 `/root`로 선택하고 저장합니다.
-6. 배포가 완료되면 `https://your-username.github.io/your-repository/`에서 사이트를 확인합니다.
-
-## 파일 구조
-
-```text
-.
-├── .nojekyll
-├── README.md
-├── index.html
-├── script.js
-└── styles.css
-```
+브라우저에서 `index.html`을 직접 열면 됩니다. 로컬 서버가 필요하지 않습니다.
