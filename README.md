@@ -11,6 +11,23 @@ GitHub Pages에 바로 올릴 수 있는 정적 개발자 포트폴리오입니�
 
 ## GitHub Pages 배포
 
+이 저장소는 GitHub Actions로 Pages를 배포할 수 있습니다.
+
+1. GitHub 저장소의 `Settings`에서 `Pages`로 이동합니다.
+2. `Build and deployment`의 `Source`를 `GitHub Actions`로 선택합니다.
+3. `main` 브랜치에 push하면 `.github/workflows/deploy-pages.yml`이 실행됩니다.
+4. 배포가 끝나면 `https://your-github-id.github.io/repository-name/`에서 확인합니다.
+
+로컬에서 CLI로 Pages 배포 방식을 Actions로 전환하려면:
+
+```bash
+gh api --method PUT repos/OWNER/REPO/pages -F build_type=workflow
+```
+
+정적 파일만 쓰는 프로젝트라 별도 빌드 명령은 없습니다. workflow가 루트의 `index.html`, `styles.css`, `script.js`, `.nojekyll`, `assets/`를 `_site`로 모아 배포합니다.
+
+## 브랜치 배포로 사용하는 경우
+
 1. 이 폴더의 파일을 GitHub 저장소에 커밋하고 `main` 브랜치로 푸시합니다.
 2. GitHub 저장소의 `Settings`에서 `Pages`로 이동합니다.
 3. `Build and deployment`에서 `Deploy from a branch`를 선택합니다.
